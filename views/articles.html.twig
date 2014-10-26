@@ -5,9 +5,10 @@
 {% block content %}
 
     {% for article in articles %}
+        {% if article.enabled %}
 
-        <div class="row col-lg-4">
-            <article class=" col-mg-4">
+        <div>
+            <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <header>
                     <h1><a href="article.php?id={{ article.id }}">{{ article.title }}</a></h1>
                     <img title="{{ article.title }}" alt="{{ article.title }}" src="{{ article.image }}">
@@ -17,13 +18,15 @@
                     <p>{{ article.content }}</p>
                 </div>
                 <footer>
-                    <p>Posted in category: <a href="article?id={{ article.category_id }}">{{ article.category_id }}</a></p>
-                    <p><a href="tag?id={{ article.category_id }}"><span class="label label-primary">Primary</span></a></p>
+                    <p>Posted in category: <a href="category.php?id={{ article.category_id }}">{{ article.category_id }}</a></p>
+                    <p><a href="tag.php?id={{ article.category_id }}"><span class="label label-primary">IIM WEB (1)</span></a></p>
                 </footer>
             </article>
         </div>
+        {% endif %}
     {% endfor %}
 
+    <div class="col-md-6">
     <ul class="pagination">
         <li {% if 1 == currentPage %} class="disabled" {% endif %} ><a href="articles.php?p={{ currentPage-1 }}">&leftarrow;</a></li>
         {% set i = 1 %}
@@ -33,7 +36,7 @@
         {% endfor %}
         <li {% if currentPage == lastPage+1 %}class="disabled"{% endif %}><a href="articles.php?p={{ currentPage+1 }}">&rightarrow;</a></li>
     </ul>
-
+    </div>
 
 
 {% endblock %}

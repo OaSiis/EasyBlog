@@ -14,8 +14,8 @@
             <p>{{ article.content }}</p>
         </div>
         <footer>
-            <p>Posted in category: <a href="/article?id={{ article.category_id }}">article.category_id</a></p>
-            <p><a href="/tag?id={{ article.category_id }}"><span class="label label-primary">Primary</span></a></p>
+            <p>Posted in category: <a href="category.php?id={{ article.category_id }}">{{ article.category_id }}</a></p>
+            <p><a href="tag.php?id={{ article.category_id }}"><span class="label label-primary">IIM WEB(1)</span></a></p>
         </footer>
 
     </article>

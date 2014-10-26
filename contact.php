@@ -15,7 +15,7 @@ if (isset($_POST['contactSubmit'])) {
     if (empty($name) || empty($email) || empty($message)) {
         $missing_credential = true;
     } else {
-        if (@mail('irvyne.contact@gmail.com', 'Blog A2 - Send by '.$email, $message)) {
+        if (@mail('maxoasiis@hotmail.fr', 'Blog A2 - Send by '.$email, $message)) {
             $send_successfully = true;
         } else {
             $send_error = true;

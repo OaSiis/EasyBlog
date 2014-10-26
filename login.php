@@ -7,7 +7,7 @@
 require __DIR__.'/_header.php';
 
 if (isConnected()) {
-    header('Location: articles.php');
+    header('Location: .php');
 }
 
 if (isset($_POST['loginSubmit'])) {

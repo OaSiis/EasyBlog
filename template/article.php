@@ -12,7 +12,7 @@ echo '<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">';
     echo '</div>';
     echo '<footer>';
         echo '<p>Posted in category: <a href="/article?id='.$article['category_id'].'">'.$article['category_id'].'</a></p>';
-        echo '<p><a href="/tag?id='.$article['category_id'].'"><span class="label label-primary">Primary</span></a></p>';
+        echo '<p><a href="/tag?id='.$article['category_id'].'"><span class="label label-primary">IIM WEB(1)</span></a></p>';
     echo '</footer>';
 echo '</article>';
 ?>

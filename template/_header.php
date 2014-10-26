@@ -34,7 +34,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.php" <?php  if(isset($homeActive)) { echo 'class="active"'; } ?>>Home</a></li>
-                <li><a href="#">Categories</a></li>
+                <li><a href="categories.php">Categories</a></li>
                 <li><a href="tags.php">Tags</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <?php if (true === isConnected()) { ?>
@@ -42,21 +42,17 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li class="dropdown-header">Articles</li>
-                        <li><a href="/admin-article-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Articles</a></li>
-                        <!--<li><a href="/admin-article-add.php"><span class="glyphicon glyphicon-plus-sign"></span> Add Article</a></li>-->
+                        <li><a href="admin-article-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Articles</a></li>
                         <li class="divider"></li>
                         <?php if (true === isAdmin()) { ?>
                         <li class="dropdown-header">Categories</li>
-                        <li><a href="/admin-category-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Categories</a></li>
-                        <li><a href="/admin-category-add.php"><span class="glyphicon glyphicon-plus-sign"></span> Add Category</a></li>
+                        <li><a href="admin-category-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Categories</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Tags</li>
-                        <li><a href="/admin-tag-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Tags</a></li>
-                        <li><a href="/admin-tag-add.php"><span class="glyphicon glyphicon-plus-sign"></span> Add Tag</a></li>
+                        <li><a href="admin-tag-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Tags</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Users</li>
-                        <li><a href="/admin-user-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Users</a></li>
-                        <li><a href="/admin-user-add.php"><span class="glyphicon glyphicon-plus-sign"></span> Add User</a></li>
+                        <li><a href="admin-user-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Users</a></li>
                         <?php } ?>
                     </ul>
                 </li>
