@@ -16,8 +16,8 @@ foreach ($articles as $article) {
     echo '<p>'.$article['content'].'</p>';
     echo '</div>';
     echo '<footer>';
-    echo '<p>Posted in category: <a href="#">'.$article['category_id'].'</a></p>';
-    echo '<p><a href="tags.php?id='.$article['category_id'].'"><span class="label label-primary">IIM WEB(1)</span></a></p>';
+    echo '<p>Posted in category: <a href="/article?id='.$article['category_id'].'">'.$article['category_id'].'</a></p>';
+    echo '<p><a href="/tag?id='.$article['category_id'].'"><span class="label label-primary">Primary</span></a></p>';
     echo '</footer>';
     echo '</article>';
 

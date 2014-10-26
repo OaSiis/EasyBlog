@@ -1,6 +1,6 @@
 <?php include __DIR__.'/_header.php'; ?>
 
-    <h1>Administration: List Users <a class="btn btn-primary" href="/admin-user-add.php">Add <span class="glyphicon glyphicon-plus-sign"></span></a></h1>
+    <h1>Administration: List Users <a class="btn btn-primary" href="/admin-user-add.php">Add</a></h1>
 
     <table class="table">
         <thead>
