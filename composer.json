@@ -1,15 +1,14 @@
 {
-    "name": "irvyne/php_a2_gr2_twig",
-    "description": "Rendu A2 GR2 Sem2",
+    "name": "oasiis/php_a2_gr1_twig",
+    "description": "PHP_RENDU",
     "require": {
-        "twig/twig": "~1.16",
-        "imagine/imagine": "~0.6"
+        "twig/twig": "~1.16"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Thibaud BARDIN",
-            "email": "thibaud.bardin@gmail.com"
+            "name": "Maximilien CHARBONNELLE",
+            "email": "maxcharbonnelle@gmail.com"
         }
     ],
     "minimum-stability": "stable"
