@@ -13,7 +13,6 @@ $loader = new Twig_Loader_Filesystem([
 ]);
 
 
-
 $perPage = 6;
 $total = countArticles($link);
 $currentPage = !empty($_GET['p']) ? (int)$_GET['p'] : 0;
@@ -21,10 +20,10 @@ $lastPage = (int)floor($total/$perPage);
 
 
 if (0 >= $currentPage) {
-    header('Location: articles.html.twig?p=1');
+    header('Location: articles.php?p=1');
 }
 if ($currentPage > ($lastPage+1)) {
-    header('Location: articles.html.twig?p='.($lastPage+1));
+    header('Location: articles.php?p='.($lastPage+1));
 }
 $articles = getArticles($link, null, ($currentPage-1)*$perPage, $perPage);
 $twig = new Twig_Environment($loader,[

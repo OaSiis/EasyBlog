@@ -109,7 +109,7 @@ function removeUser($link, $id)
 function connection($link, $username, $password)
 {
     $username = mysqli_real_escape_string($link, $username);
-    $password = sha1(mysqli_real_escape_string($link, $password));
+    $password = mysqli_real_escape_string($link, $password);
 
     $sql = 'SELECT username, role FROM users WHERE username="'.$username.'" AND password="'.$password.'"';
     $result = mysqli_query($link, $sql);

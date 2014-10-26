@@ -7,7 +7,7 @@
 require __DIR__.'/_header.php';
 
 if (isConnected()) {
-    header('Location: index.php');
+    header('Location: articles.php');
 }
 
 if (isset($_POST['loginSubmit'])) {
@@ -19,7 +19,7 @@ if (isset($_POST['loginSubmit'])) {
     } else {
         $connection = connection($link, $username, $password);
         if ($connection) {
-            header('Location: index.php');
+            header('Location: articles.php');
         } else {
             $credential_error = true;
         }

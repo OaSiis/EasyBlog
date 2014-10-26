@@ -14,8 +14,6 @@ $loader = new Twig_Loader_Filesystem([
 
 
 
-
-
 if (!empty($_GET['id'])) {
     $id = (int) $_GET['id'];
     $article = getArticle($link, $id);

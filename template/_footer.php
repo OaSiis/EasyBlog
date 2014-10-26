@@ -1,6 +1,5 @@
 <footer id="footer" class="col-md-12 text-center">
-    <p>@author Thibaud BARDIN (<a href="https://github.com/Irvyne">https://github.com/Irvyne</a>)</p>
-    <p>This code is under MIT licence (see <a href="https://github.com/Irvyne/license/blob/master/MIT.md">https://github.com/Irvyne/license/blob/master/MIT.md</a>)</p>
+    <p>@author Me(<a href="https://github.com/OaSiis">https://github.com/OaSiis</a>)</p>
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

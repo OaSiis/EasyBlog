@@ -33,17 +33,17 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/" <?php  if(isset($homeActive)) { echo 'class="active"'; } ?>>Home</a></li>
-                <li><a href="/categories.php">Categories</a></li>
-                <li><a href="/tags.php">Tags</a></li>
-                <li><a href="/contact.php">Contact</a></li>
+                <li><a href="index.php" <?php  if(isset($homeActive)) { echo 'class="active"'; } ?>>Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="tags.php">Tags</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <?php if (true === isConnected()) { ?>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li class="dropdown-header">Articles</li>
                         <li><a href="/admin-article-list.php"><span class="glyphicon glyphicon-list-alt"></span> List Articles</a></li>
-                        <li><a href="/admin-article-add.php"><span class="glyphicon glyphicon-plus-sign"></span> Add Article</a></li>
+                        <!--<li><a href="/admin-article-add.php"><span class="glyphicon glyphicon-plus-sign"></span> Add Article</a></li>-->
                         <li class="divider"></li>
                         <?php if (true === isAdmin()) { ?>
                         <li class="dropdown-header">Categories</li>
@@ -65,7 +65,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php if (true === isConnected()) { ?>
                 <li><a href="#">Welcome <?php echo getSession()['username']; ?>!</a></li>
-                <li><a href="/logout.php">Logout</a></li>
+                <li><a href="logout.php">Logout</a></li>
                 <?php } else { ?>
                 <li><a href="/login.php">Login</a></li>
                 <?php } ?>
