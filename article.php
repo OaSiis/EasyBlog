@@ -6,12 +6,6 @@
 
 require __DIR__.'/_header.php';
 
-Twig_Autoloader::register();
-$loader = new Twig_Loader_Filesystem([
-    __DIR__.'/views',
-]);
-
-
 
 if (!empty($_GET['id'])) {
     $id = (int) $_GET['id'];

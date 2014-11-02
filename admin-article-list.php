@@ -6,10 +6,6 @@
 
 require __DIR__.'/_header.php';
 
-Twig_Autoloader::register();
-$loader = new Twig_Loader_Filesystem([
-    __DIR__.'/views',
-]);
 
 $articles = getArticles($link);
 $twig = new Twig_Environment($loader,[

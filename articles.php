@@ -6,11 +6,6 @@
 
 require __DIR__.'/_header.php';
 
-Twig_Autoloader::register();
-$loader = new Twig_Loader_Filesystem([
-    __DIR__.'/views',
-]);
-
 $perPage = 6;
 $total = countArticles($link);
 $currentPage = !empty($_GET['p']) ? (int)$_GET['p'] : 0;
