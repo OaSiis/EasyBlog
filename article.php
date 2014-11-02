@@ -22,9 +22,7 @@ if (!empty($_GET['id'])) {
 } else {
     header('Location: index.php');
 }
-$homeUsername = [
-    'getUsername' => getSession(),
-];
+
 $homeAdmin = [
     'isAdmin' => isAdmin(),
 ];
@@ -38,7 +36,6 @@ $twig = new Twig_Environment($loader,[
 
 echo $twig->render('article.html.twig', [
     'article' => $article,
-    'homeUsername' => $homeUsername,
     'homeAdmin' => $homeAdmin,
     'homeConnected' => $homeConnected,
     'homeSession' => $homeSession,

@@ -16,9 +16,6 @@ $twig = new Twig_Environment($loader,[
 //'cache' => null,
 ]);
 
-$homeUsername = [
-    'getUsername' => getSession(),
-];
 $homeAdmin = [
     'isAdmin' => isAdmin(),
 ];
@@ -29,7 +26,6 @@ $homeSession = $_SESSION;
 
 echo $twig->render('admin-article-list.html.twig', [
     'articles' => $articles,
-    'homeUsername' => $homeUsername,
     'homeAdmin' => $homeAdmin,
     'homeConnected' => $homeConnected,
     'homeSession' => $homeSession,

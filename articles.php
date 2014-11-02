@@ -28,9 +28,7 @@ $twig = new Twig_Environment($loader,[
 //'cache' => null,
 ]);
 
-$homeUsername = [
-    'getUsername' => getSession(),
-];
+
 $homeAdmin = [
     'isAdmin' => isAdmin(),
 ];
@@ -44,7 +42,6 @@ echo $twig->render('articles.html.twig', [
     'total' => $total,
     'currentPage' => $currentPage,
     'lastPage' => $lastPage,
-    'homeUsername' => $homeUsername,
     'homeAdmin' => $homeAdmin,
     'homeConnected' => $homeConnected,
     'homeSession' => $homeSession,
