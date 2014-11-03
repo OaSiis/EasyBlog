@@ -5,7 +5,6 @@
  */
 
 require __DIR__.'/_header.php';
-
 $perPage = 6;
 $total = countArticles($link);
 $currentPage = !empty($_GET['p']) ? (int)$_GET['p'] : 0;
